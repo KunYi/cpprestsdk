@@ -21,9 +21,11 @@
   <PropertyGroup>
     <Force-Enable-openssl-v140-windesktop-msvcstl-static-rt-dyn-arm Condition="'$(Platform)' == 'ARM'">true</Force-Enable-openssl-v140-windesktop-msvcstl-static-rt-dyn-arm>
     <Force-Enable-openssl-v140-windesktop-msvcstl-static-rt-dyn-x86 Condition="'$(Platform)' == 'Win32'">true</Force-Enable-openssl-v140-windesktop-msvcstl-static-rt-dyn-x86>
+    <Force-Enable-openssl-v140-windesktop-msvcstl-static-rt-dyn-x86 Condition="'$(Platform)' == 'x86'">true</Force-Enable-openssl-v140-windesktop-msvcstl-static-rt-dyn-x86>
     <Force-Enable-openssl-v140-windesktop-msvcstl-static-rt-dyn-x64 Condition="'$(Platform)' == 'x64'">true</Force-Enable-openssl-v140-windesktop-msvcstl-static-rt-dyn-x64>
     <Force-Enable-zlib-v140-windesktop-msvcstl-static-rt-dyn-arm Condition="'$(Platform)' == 'ARM'">true</Force-Enable-zlib-v140-windesktop-msvcstl-static-rt-dyn-arm>
     <Force-Enable-zlib-v140-windesktop-msvcstl-static-rt-dyn-x86 Condition="'$(Platform)' == 'Win32'">true</Force-Enable-zlib-v140-windesktop-msvcstl-static-rt-dyn-x86>
+    <Force-Enable-zlib-v140-windesktop-msvcstl-static-rt-dyn-x86 Condition="'$(Platform)' == 'x86'">true</Force-Enable-zlib-v140-windesktop-msvcstl-static-rt-dyn-x86>
     <Force-Enable-zlib-v140-windesktop-msvcstl-static-rt-dyn-x64 Condition="'$(Platform)' == 'x64'">true</Force-Enable-zlib-v140-windesktop-msvcstl-static-rt-dyn-x64>
   </PropertyGroup>
   <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), build.root))\Build\Config.Definitions.props" />
